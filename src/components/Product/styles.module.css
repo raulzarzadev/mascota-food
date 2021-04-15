@@ -1,0 +1,53 @@
+
+
+
+.product{
+    position: relative;
+    display: flex;
+    padding: var(--space-1);
+    box-shadow: var(--shadow-1);
+    cursor: pointer;
+    border-radius: var(--space-2);
+}
+
+.product:hover .image {
+    opacity: 1;
+}
+
+.product:hover .description {
+    opacity: .4;
+}
+
+.image {
+    opacity: .5;
+    width: 250px;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.description {
+    font-size: var(--body-2);
+    font-weight: 500;
+    padding: var(--space-2);
+    position: absolute;
+    bottom: 0
+}
+.title {
+    font-weight: 600;
+    font-size: var(--title-2);
+    text-transform: uppercase;
+    white-space: nowrap;
+
+}
+
+.details{
+    
+}
+
+.actions {
+    position: absolute;
+    right: 0;
+    padding: var(--space-2);
+}

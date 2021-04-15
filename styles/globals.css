@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,300&display=swap');
+
+/* can now reference my font */
 html,
+
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Roboto, sans-serif;
 }
+
 
 a {
   color: inherit;
@@ -13,4 +17,50 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+ul,
+li,
+ol{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  padding: 0;
+  margin: 0;
+}
+
+
+/* .-°'*,.-°'*,.-°'*,.-°'*,.-°'*,.-°'*,.-°'*, */
+/*            CSS VARIABLES             */
+/* .-°'*,.-°'*,.-°'*,.-°'*,.-°'*,.-°'*,.-°'rz */
+
+:root{
+  --primary: rgb(1, 104, 32);
+  --secondary: rgb(59, 185, 207);
+  --bgDefault: rgb(63, 40, 40);
+  --bgDark: rgb(107, 19, 19);
+  --bgLight: rgb(179, 90, 90);
+  --bgTransparent: rgba(179, 90, 90, 0.466);
+  --shadow-1:  0px 3px 4px 0px rgba(0, 0, 0, 0.2);
+  --shadow-2:  0px 3px 5px 0px rgb(182, 83, 83, .5);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+
+/* .-°'*,.-°'*,.-°'*,.-°'*,.-°'*,.-°'*,.-°'*, */
+/*                    FONT SIZES              */
+/* .-°'*,.-°'*,.-°'*,.-°'*,.-°'*,.-°'*,.-°'rz */
+
+  --title-1: 1.9rem;
+  --title-2: 1.7rem;
+  --title-3: 1.2rem;
+  --title-4: 1rem;
+  --body-1: 1.6rem;
+  --body-2: 1.3rem;
+  --body-3: 1rem;
+
 }

@@ -1,0 +1,31 @@
+
+.hero{
+width: 100%;
+min-height: 500px;
+position: relative;
+box-shadow: var(--shadow-1);
+
+}
+.bgImage {
+    width: 100%;
+min-height: 500px;
+background-position: center;
+background-size: cover;
+opacity: .5;
+}
+.title {
+position: absolute;
+bottom: 0;
+right: 0;
+padding: var(--space-3);
+color: rgb(0, 0, 0);
+z-index: 1;
+}
+
+@media (min-width: 600px) {
+    .title {
+        bottom: 50%
+    }
+}
+
+

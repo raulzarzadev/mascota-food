@@ -1,0 +1,14 @@
+
+.location{
+   margin: var(--space-3) 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-items: center;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.location .contacts{
+    text-align: end;
+}
+
