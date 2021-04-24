@@ -11,20 +11,29 @@ box-shadow: var(--shadow-1);
 min-height: 500px;
 background-position: center;
 background-size: cover;
-opacity: .5;
+opacity: .9;
 }
 .title {
 position: absolute;
 bottom: 0;
-right: 0;
 padding: var(--space-3);
-color: rgb(0, 0, 0);
-z-index: 1;
+color: rgb(255, 255, 255);
+max-width: 80%;
+right:  0;
+text-shadow: 3px 1px 3px  #000;
+}
+.title h1 {
+    font-size: 3rem;
 }
 
 @media (min-width: 600px) {
     .title {
-        bottom: 50%
+        bottom:10%;
+max-width: 60%;
+
+    }
+    .title h1 {
+        font-size: 4rem;
     }
 }
 

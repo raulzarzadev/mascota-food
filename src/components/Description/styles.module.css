@@ -1,5 +1,77 @@
 
 .description{
-    padding: var(--space-2);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
+.description > div {
+    width: 100%;
+    padding: var(--space-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+.action {
+   /*  width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%; */
+    position: absolute;
+    top: 25px;
+    right: 50px;
+}
+.action  > * {
+    position: absolute;
+    right: 0;
+    white-space: nowrap;
+}
+.contacts {
+    display: flex;
+}
+.contact {
+    margin-left: -25px;
+    margin-top: -20px;
+}
+.label {
+    position: absolute;
+    bottom: -10px;
+    left: 40%;
+    font-weight: 500;
+}
+
+
+.title {
+    font-size: 2rem;
+}
+.content {
+    font-size: 1.5rem;
+    font-family: inherit;
+    white-space: pre-line;
+}
+
+@media (min-width:600px) {
+    .title{
+        font-size: 3rem;
+    }
+    .content {
+        font-size: 2rem;
+    }
+    .description {
+        flex-direction: row;
+    }
+    .description > div {
+        width: 50%;
+    }
+}
+
+
 

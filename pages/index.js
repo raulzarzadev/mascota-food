@@ -20,7 +20,7 @@ export default function Home () {
         <Hero/>
         <Description/>
         <Products/>
-       <Location/>
+       {/* <Location/> */}
       </main>
       <Footer/>
     </div>

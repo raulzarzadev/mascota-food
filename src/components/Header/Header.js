@@ -17,7 +17,7 @@ export default function Header () {
       <Button onClick={handleSetSidebar}>
         <AiOutlineMenuUnfold fontSize='49px'/>
       </Button>
-      <div style={{ opacity: hiddeSidebar && 1 }} className={s.sidebar}>
+      <div style={{ visibility: hiddeSidebar && 'visible' }} className={s.sidebar}>
         <Button onClick={handleSetSidebar}>
           <AiOutlineMenuFold fontSize='49px'/>
         </Button>
