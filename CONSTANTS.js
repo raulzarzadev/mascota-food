@@ -7,7 +7,7 @@ export default {
 
   Pregunta por nuestros descuentos por mayoreo
   `,
-  mobile: '55437374016',
+  mobile: '5543374016',
   msgText: 'Hola Quiero Comprar Croquetas',
   telegramUser: 'raulzarza'
 }
