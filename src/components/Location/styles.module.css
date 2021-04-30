@@ -2,13 +2,27 @@
 .location{
    margin: var(--space-3) 0;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-items: center;
     align-items: center;
     gap: var(--space-3);
+    width: 90%;
 }
 
 .location .contacts{
     text-align: end;
+}
+
+.address {
+    font-size: 2.5rem;
+}
+.contacts {
+    font-size: 2rem;
+}
+
+@media (min-width:600px) {
+    .location {
+        flex-direction: row;
+    }
 }
 

@@ -13,16 +13,22 @@ export default function Home () {
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/LogoMascotaFoodSigno.gif" />
+        {/* --- GOOGLE FONTS ---- */}
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Capriola&family=Montserrat:wght@300;400;700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
-      <Header/>
+      <Header />
       <main className={styles.main}>
-        <Hero/>
-        <Description/>
-        <Products/>
-       {/* <Location/> */}
+        <Hero />
+        <Description />
+        {/* <Products /> */}
+       <Location/>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

@@ -14,10 +14,9 @@
     position: relative;
 }
 .icon {
-    width: 150px;
-    height: 150px;
+    width: 800px;
+    height: auto;
     border-radius: 50%;
-    border: 1px solid;
 }
 
 .action {

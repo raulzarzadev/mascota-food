@@ -17,7 +17,7 @@ export default function Description () {
   return (
     <div className={s.description}>
       <div className={s.description_left}>
-        <div className={s.icon} />
+          <img className={s.icon} src={'/LogoMascotaFoodSigno.gif'} />
         <div className={s.action}>
           <div className={s.contacts}>
             <div className={s.label}>Pregunta</div>
