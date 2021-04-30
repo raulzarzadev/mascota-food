@@ -12,7 +12,11 @@ export default function Home () {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>MASCOTA FOOD</title>
+        <meta
+          name="description"
+          content=" En Mascota Food encuentras todo lo que necesitas para consentir a tu mascota, las mejores marcas al mejor precio, ven a conocernos."
+        ></meta>
         <link rel="icon" href="/LogoMascotaFoodSigno.gif" />
         {/* --- GOOGLE FONTS ---- */}
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -26,7 +30,7 @@ export default function Home () {
         <Hero />
         <Description />
         {/* <Products /> */}
-       <Location/>
+        <Location />
       </main>
       <Footer />
     </div>
