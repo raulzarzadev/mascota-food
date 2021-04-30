@@ -18,7 +18,7 @@ export default function Header () {
   return (
     <header className={s.header}>
       <div className={s.side_menu}>
-        <Button onClick={handleSetSidebar}>
+        <Button onClick={handleSetSidebar} >
           <AiOutlineMenuUnfold fontSize="49px" />
         </Button>
         <div
@@ -26,7 +26,7 @@ export default function Header () {
           className={s.sidebar}
         >
           <div className={s.menu_button}>
-            <Button onClick={handleSetSidebar}>
+            <Button onClick={handleSetSidebar} fullwidth>
               <AiOutlineMenuFold fontSize="49px" />
             </Button>
           </div>
@@ -52,20 +52,18 @@ export default function Header () {
         <nav className={s.top_nav}>
           <ul>
             <li>
-              <Link href='/'>Contacto</Link>
+              <Link href="/">Contacto</Link>
             </li>
             <li>
-              <Link href='/'>Home</Link>
+              <Link href="/">Home</Link>
             </li>
           </ul>
         </nav>
       </div>
 
-      <div className={s.icon_cont}>
-        <Link href="/">
-          <img src={'/LogoMascotaFood.gif'} className={s.icon} />
-        </Link>
-      </div>
+      <Link href="/">
+        <img width="120" src={'/LogoMascotaFood.gif'} className={s.icon} />
+      </Link>
     </header>
   )
 }

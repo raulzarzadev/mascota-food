@@ -14,10 +14,10 @@
 }
 
 .address {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .contacts {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 @media (min-width:600px) {
