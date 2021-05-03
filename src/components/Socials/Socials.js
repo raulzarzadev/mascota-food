@@ -27,15 +27,16 @@ export default function Socials () {
   ]
   return (
     <div className={s.socials}>
-      {socials.map((social, i) => (
-        <div key={i} className={s.social}>
-          <Link href={social.href}>
+      <h4>Cotiza en: </h4>
+      <div>
+        {socials.map((social, i) => (
+          <Link key={i} href={social.href}>
             <div className={s.icon} style={{ color: social.color }}>
               {social.icon}
             </div>
           </Link>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   )
 }
