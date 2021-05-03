@@ -41,10 +41,13 @@ p {
 /* .-°'*,.-°'*,.-°'*,.-°'*,.-°'*,.-°'*,.-°'rz */
 
 :root {
-  --primary: rgb(1, 104, 32);
-  --secondary: rgb(59, 185, 207);
+  --primary: #2B87FF;
+  --primary-dark:#143D73;
+  --secondary: #FFBF1C;
+  --secondary-dark:#FFBF1C;
+  --thirth:#B38040;
   --bgDefault: rgb(63, 40, 40);
-  --bgDark: rgb(107, 19, 19);
+  --bgDark: #971A00;
   --bgLight: rgb(179, 90, 90);
   --bgTransparent: rgba(179, 90, 90, 0.466);
   --shadow-1: 0px 3px 4px 0px rgba(0, 0, 0, 0.2);

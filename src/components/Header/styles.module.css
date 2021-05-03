@@ -21,7 +21,6 @@
 
 .menu_button{
   min-height: 70px;
-  border: 1px solid;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,5 +75,5 @@ justify-content: center;
   padding: var(--space-3);
 }
 .li:hover{
-  background-color: var(--bgLight);
+  background-color: var(--ba);
 }

@@ -62,7 +62,7 @@ export default function Header () {
       </div>
 
       <Link href="/">
-        <img width="120" src={'/LogoMascotaFood.gif'} className={s.icon} />
+        <img width="180" height='100%' src={'/LogoMascotaFood.gif'} className={s.icon} />
       </Link>
     </header>
   )
