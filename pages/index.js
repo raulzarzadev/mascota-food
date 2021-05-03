@@ -7,6 +7,7 @@ import Hero from '../src/components/Hero/Hero'
 import Description from '../src/components/Description/Description'
 import Products from '../src/components/Products/Products'
 import Location from '../src/components/Location/Location'
+import Socials from '../src/components/Socials'
 
 export default function Home () {
   return (
@@ -28,6 +29,7 @@ export default function Home () {
       <Header />
       <main className={styles.main}>
         <Hero />
+        <Socials />
         <Description />
         {/* <Products /> */}
         <Location />

@@ -7,10 +7,10 @@ export default {
   a tu mascota, las mejores marcas al mejor
   precio, ven a conocernos.
   `,
-  tel: '58878895',
-  mobile: '5543374016',
+  tel: '5532105757',
+  mobile: '5554941191',
   msgText: 'Hola Quiero Comprar Croquetas',
-  telegramUser: 'raulzarza',
+  telegramUser: 'macotafood',
   address: `
     Blvd. Cuautitlan Izalli Mz. 1 Lt. 3, 
     Hacienda de la Luz, 

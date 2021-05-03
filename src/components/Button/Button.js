@@ -2,7 +2,7 @@ import s from './styles.module.css'
 
 export default function Button ({
   Component,
-  fullwidth = false,
+  fullwidth = 'false',
   children,
   ...rest
 }) {
