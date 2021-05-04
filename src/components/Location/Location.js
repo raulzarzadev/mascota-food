@@ -3,34 +3,52 @@ import Link from '../Link'
 import s from './styles.module.css'
 
 export default function Location () {
-  const { address, tel, mobile, msgText, telegramUser, googleLocation } = CONSTANTS
+  const {
+    address,
+    tel,
+    mobile,
+    msgText,
+    telegramUser,
+    googleLocation,
+    contacts
+  } = CONSTANTS
+
   return (
     <div className={s.location}>
       <div className={s.contacts}>
         <div className={s.address}>
-          <h5>Puedes encontrarnos en:</h5>
+          <div className={s.sub_title}>
+            <h6>Encuentranos en:</h6>
+          </div>
           <p>{address}</p>
         </div>
         <div className={s.tel}>
-          <h5>Llamanos a los telefonos : </h5>
-          <p>
-            Fijo:{' '}
+          <div className={s.sub_title}>
+            <h6>Llamanos a : </h6>
+          </div>
+          {contacts.map(({ label, href, value, key }) => (
+            <p key={key}>
+              <Link href={href}>
+                {label}: <strong>{value}</strong>
+              </Link>
+            </p>
+          ))}
+         {/*  <p>
             <Link href={'/'}>
-              <strong>{tel}</strong>
+              Fijo: <strong>{tel}</strong>
             </Link>
           </p>
           <p>
-            WhatsApp:{' '}
             <Link href={`https://wa.me/+521${mobile}?text=${msgText}`}>
-              <strong>{mobile}</strong>
+              WhatsApp: <strong>{mobile}</strong>
             </Link>
           </p>
           <p>
-            Telegram:
             <Link href={`https://telegram.me/${telegramUser}`}>
+              Telegram:
               <strong>{telegramUser}</strong>
             </Link>
-          </p>
+          </p> */}
         </div>
       </div>
       <div
