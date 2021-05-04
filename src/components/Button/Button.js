@@ -11,9 +11,9 @@ export default function Button ({
 
   return (
     <WrapperComponent
-      {...rest}
       fullwidth={fullwidth && 'true'}
       className={s.button}
+      {...rest}
     >
       {children}
     </WrapperComponent>

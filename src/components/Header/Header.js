@@ -8,22 +8,38 @@ import {
 } from 'react-icons/ai'
 
 import Button from '../Button/Button'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function Header () {
   const [hiddeSidebar, setHiddeSidebar] = useState(false)
   const handleSetSidebar = () => {
     setHiddeSidebar(!hiddeSidebar)
   }
+
+  const closeSideBar = (e) => {
+    const el = e.target.id
+    if (el !== 'side-menu') {
+      handleSetSidebar()
+    }
+  }
+
+  useEffect(() => {
+    if (hiddeSidebar) {
+      document.addEventListener('click', closeSideBar)
+    }
+    return () => document.removeEventListener('click', closeSideBar)
+  }, [hiddeSidebar])
+
   return (
     <header className={s.header}>
       <div className={s.side_menu}>
-        <Button onClick={handleSetSidebar} >
+        <Button onClick={handleSetSidebar} id="side-menu-open">
           <AiOutlineMenuUnfold fontSize="49px" />
         </Button>
         <div
           style={{ visibility: hiddeSidebar && 'visible' }}
           className={s.sidebar}
+          id="side-menu"
         >
           <div className={s.menu_button}>
             <Button onClick={handleSetSidebar} fullwidth>
@@ -62,7 +78,12 @@ export default function Header () {
       </div>
 
       <Link href="/">
-        <img width="180" height='100%' src={'/LogoMascotaFood.gif'} className={s.icon} />
+        <img
+          width="180"
+          height="100%"
+          src={'/LogoMascotaFood.gif'}
+          className={s.icon}
+        />
       </Link>
     </header>
   )
