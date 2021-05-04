@@ -22,18 +22,20 @@ export default function Location () {
           </div>
           <p>{address}</p>
         </div>
-        <div className={s.tel}>
+        <div className={s.tels}>
           <div className={s.sub_title}>
             <h6>Llamanos a : </h6>
           </div>
-          {contacts.map(({ label, href, value, key }) => (
-            <p key={key}>
-              <Link href={href}>
-                {label}: <strong>{value}</strong>
+          <div className={s.callus}>
+            {contacts.map(({ label, href, value, key }) => (
+              <Link key={key} href={href}>
+                <p className={s.label}>
+                  {label}: <strong>{value}</strong>
+                </p>
               </Link>
-            </p>
-          ))}
-         {/*  <p>
+            ))}
+          </div>
+          {/*  <p>
             <Link href={'/'}>
               Fijo: <strong>{tel}</strong>
             </Link>
